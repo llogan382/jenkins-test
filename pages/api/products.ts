@@ -63,7 +63,7 @@ const data: Product[] = [
     rating: 5,
     name: 'Donec sit elit',
     description:
-      'Morbi eu ullamcorper urna, a condimentum massa. In fermentum ante non turpis cursus fringilla. Praesent neque eros, gravida vel ante sed, vehicula elementum orci. Sed eu ipsum eget enim mattis mollis.',
+      'Morbi eu ullamcorper urna, a condimentum massa. In fermentum ante non turpis cursus fringilla. Praesent neque eros, gravida vel ante sed, vehicula elementum orci. Sed eu ipsum eget enim mattis mollis.Hello',
     price: {
       amount: 4200,
       currency: { code: 'USD', base: 10, exponent: 2 },
