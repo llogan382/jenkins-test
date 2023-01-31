@@ -7,6 +7,8 @@ pipeline {
             }
             steps {
                 sh 'node --version'
+                sh 'npm install'
+                sh 'npm run build'
             }
         }
         stage('node-16') {
@@ -15,6 +17,8 @@ pipeline {
             }
             steps {
                 sh 'node --version'
+                                sh 'npm install'
+                sh 'npm run build'
             }
         }
                 stage('node-18') {
@@ -23,6 +27,8 @@ pipeline {
             }
             steps {
                 sh 'node --version'
+                                sh 'npm install'
+                sh 'npm run build'
             }
         }
     }
