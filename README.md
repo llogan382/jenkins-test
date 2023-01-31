@@ -1,31 +1,32 @@
-# Next.js & Cloudinary example app
+# Next.js App Directory Playground
 
-This example shows how to create an image gallery site using Next.js, [Cloudinary](https://cloudinary.com), and [Tailwind](https://tailwindcss.com).
+Next.js introduced the `app/` directory (beta). This is the result of the [Layouts RFC](https://nextjs.org/blog/layouts-rfc) previously published for community feedback. This includes support for:
 
-## Deploy your own
+- **Layouts:** Easily share UI while preserving state and avoiding re-renders.
+- **Server Components:** Making server-first the default for the most dynamic applications.
+- **Streaming:** Display instant loading states and stream in updates.
+- **Suspense for Data Fetching:** `async`/`await` support and the `use` hook for component-level fetching.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or view the demo [here](https://nextconf-images.vercel.app/)
+The `app/` directory can coexist with the existing `pages` directory for incremental adoption. While you **don't need to use the `app/` directory** when upgrading to Next.js 13, we're laying the foundations to build complex interfaces while shipping less JavaScript.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-cloudinary&project-name=nextjs-image-gallery&repository-name=with-cloudinary&env=NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,CLOUDINARY_API_KEY,CLOUDINARY_API_SECRET,CLOUDINARY_FOLDER&envDescription=API%20Keys%20from%20Cloudinary%20needed%20to%20run%20this%20application.)
+## Running Locally
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Install dependencies:
 
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example::
-
-```bash
- npx create-next-app --example with-cloudinary nextjs-image-gallery
+```sh
+pnpm install
 ```
 
-```bash
-yarn create next-app --example with-cloudinary nextjs-image-gallery
+2. Start the dev server:
+
+```sh
+pnpm dev
 ```
 
-```bash
-pnpm create next-app --example with-cloudinary nextjs-image-gallery
-```
+## Documentation
 
-## References
+https://beta.nextjs.org/docs
 
-- Cloudinary API: https://cloudinary.com/documentation/transformation_reference
+## Leave Feedback
+
+https://github.com/vercel/next.js/discussions/41745
