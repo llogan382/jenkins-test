@@ -17,17 +17,17 @@ pipeline {
             }
             steps {
                 sh 'node --version'
-                                sh 'npm install'
+                sh 'npm install'
                 sh 'npm run build'
             }
         }
-                stage('node-18') {
+        stage('node-18') {
             agent {
                 docker { image 'node:18.13-alpine3.17' }
             }
             steps {
                 sh 'node --version'
-                                sh 'npm install'
+                sh 'npm install'
                 sh 'npm run build'
             }
         }
